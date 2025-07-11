@@ -1,0 +1,8 @@
+{
+    "domain": "oe_energie_smart_meter",
+    "name": "Oesterreichs Energie Smart Meter Sensor",
+    "version": "1.0",
+    "requirements": ["httpx"],
+    "codeowners": ["@rreinhardd"],
+    "config_flow": false
+  }
