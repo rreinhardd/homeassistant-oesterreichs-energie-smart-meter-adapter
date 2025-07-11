@@ -11,6 +11,10 @@ Es handelt sich um eine "alpha" Version.
 4. Anpassen der folgenden Konfigurationseinstellungen:
     - IP-Adresse des SMA
     - API-Key
+5. In sensors.yaml muss folgende Zeile eingefügt werden.
+```
+- platform: oe_energie_smart_meter
+```
 
 # Ergebnis
 Es werden die 8 Werte, die die JSON API liefert als Sensoren erstellt. Zusätzlich noch eine Sensor "Nettoleistung", bei dem der Leistungsbezug aus dem Netz positiv dargestellt wird. Die Leistungseinspeisung ins Netz wird negativ dargestellt. Die Sensoren können ins Energiemanagement von HA ohne Weiteres integriert werden. Die dargestellten Karten sind nur exemplarisch.
