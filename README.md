@@ -1,4 +1,4 @@
-# homeassistant-oesterreichs-energie-smart-meter-adapter
+# Home Assistant - Oesterreichs Energie Smart Meter Adapter
 Das ist ein Custom Component für Home Assistant um die Live-Daten des Smart Meter Adapters (SMA) von Oesterreichs Energie (https://oesterreichsenergie.at/publikationen/ueberblick/detailseite/smart-meter-adapter) und damit die offiziell gültigen Leistungs- und Energiedaten des Hausanschlusses in Home-Assistant darzustellen.
 
 # Hinweise
