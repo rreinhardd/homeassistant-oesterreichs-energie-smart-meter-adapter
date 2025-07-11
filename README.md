@@ -9,8 +9,8 @@ Es handelt sich um eine "alpha" Version.
 2. Die JSON API muss im Backend aktiviert sein.
 3. Installation der Dateien im Home-Assistant Verzeichnis "custom_component"
 4. Anpassen der folgenden Konfigurationseinstellungen:
-    - IP-Adresse des SMA
-    - API-Key
+    - IP-Adresse des SMA (sensor.py Zeile 61)
+    - API-Key (sensor.py Zeile 62)
 5. In sensors.yaml muss folgende Zeile eingefügt werden.
 ```
 - platform: oe_energie_smart_meter
