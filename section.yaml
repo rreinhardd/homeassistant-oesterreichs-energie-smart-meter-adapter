@@ -1,0 +1,62 @@
+type: sections
+max_columns: 3
+title: Österreichs Energie SMA
+path: osterreichs-energie-sma
+sections:
+  - type: grid
+    cards:
+      - type: heading
+        heading: SMA - Daten
+        heading_style: title
+      - type: entities
+        title: Basisdaten
+        entities:
+          - entity: sensor.geratename
+          - entity: sensor.zahler_id
+          - entity: sensor.systemzeit
+          - entity: sensor.zeitstempel
+      - type: entities
+        title: Momentanwerte
+        entities:
+          - entity: sensor.momentanverbrauch
+          - entity: sensor.momentaneinspeisung
+          - entity: sensor.nettoleistung
+      - type: entities
+        title: Zählerstand
+        entities:
+          - entity: sensor.bezug
+          - entity: sensor.einspeisung
+  - type: grid
+    cards:
+      - type: heading
+        heading: Aktuelle Wirkleistung
+        heading_style: title
+      - type: history-graph
+        entities:
+          - entity: sensor.nettoleistung
+        hours_to_show: 1
+        grid_options:
+          columns: full
+          rows: 4
+        title: Nettoleistung (letzte Stunde)
+      - type: history-graph
+        entities:
+          - entity: sensor.momentaneinspeisung
+          - entity: sensor.momentanverbrauch
+        hours_to_show: 1
+        grid_options:
+          columns: full
+          rows: 4
+        title: Letzte Stunde
+      - type: history-graph
+        entities:
+          - entity: sensor.momentaneinspeisung
+          - entity: sensor.momentanverbrauch
+        hours_to_show: 12
+        title: 24 Stunden
+        grid_options:
+          columns: full
+          rows: 4
+    column_span: 2
+cards: []
+icon: mdi:meter-gas
