@@ -15,6 +15,8 @@ Es handelt sich um eine "alpha" Version.
 ```
 - platform: oe_energie_smart_meter
 ```
+6. Home Assistant neu starten
+7. Die section.yaml Datei enthält Code, der die unten dargestellten Karten im UI erstellt.
 
 # Ergebnis
 Es werden die 8 Werte, die die JSON API liefert als Sensoren erstellt. Zusätzlich noch eine Sensor "Nettoleistung", bei dem der Leistungsbezug aus dem Netz positiv dargestellt wird. Die Leistungseinspeisung ins Netz wird negativ dargestellt. Die Sensoren können ins Energiemanagement von HA ohne Weiteres integriert werden. Die dargestellten Karten sind nur exemplarisch.
